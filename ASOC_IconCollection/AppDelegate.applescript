@@ -32,11 +32,11 @@ View
 
 *)
 
-
+#MARK: - AppDelegate
 script AppDelegate
 	property parent : class "NSObject"
 	
-	-- IBOutlets
+	# IBOutlets
 	property _the_window : missing value
 	
 	on applicationShouldTerminate:sender
@@ -53,6 +53,7 @@ script AppDelegate
 end script
 
 #MARK: - NSValueTransformer
+#MARK: URLからアイコンに変換
 script YKZURLToIcon
 	property parent : class "NSValueTransformer"
 	property allowsReverseTransformation : false
@@ -67,6 +68,7 @@ script YKZURLToIcon
 	end transformedValue:
 end script
 
+#MARK: URLから表示名に変換
 script YKZURLToDisplayedName
 	property parent : class "NSValueTransformer"
 	property allowsReverseTransformation : false
@@ -81,7 +83,7 @@ script YKZURLToDisplayedName
 	end transformedValue:
 end script
 
-#MARK: -
+#MARK: - NSBoxのカスタムクラス
 script YKZNoRespondBox
 	property parent : class "NSBox"
 	
@@ -91,7 +93,7 @@ script YKZNoRespondBox
 end script
 
 #MARK: - NSScrollView
---背景にグラデーションを表示する
+# 背景にグラデーションを表示する
 script YKZScrollView
 	property parent : class "NSScrollView"
 	
@@ -105,13 +107,13 @@ script YKZScrollView
 		set _background_gradient to current application's NSGradient's alloc()'s initWithStartingColor:strartColor endingColor:endColor
 	end awakeFromNib
 	
-	#MARK: グラデーションを描画
+	# グラデーションを描画
 	on drawRect:rect
 		_background_gradient's drawInRect:(my |bounds|()) angle:90.0
 	end drawRect:
 end script
 
-#MARK: -
+#MARK: - NSViewController
 script YKZViewController
 	property parent : class "NSViewController"
 	
