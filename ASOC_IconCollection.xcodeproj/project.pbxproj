@@ -215,6 +215,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OSACOMPILE_EXECUTE_ONLY = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -266,6 +267,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OSACOMPILE_EXECUTE_ONLY = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
