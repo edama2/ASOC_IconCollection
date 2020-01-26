@@ -281,6 +281,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				OSACOMPILE_EXECUTE_ONLY = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yukikaze.ASOC-IconCollection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -297,6 +298,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				OSACOMPILE_EXECUTE_ONLY = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yukikaze.ASOC-IconCollection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
